@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Calculator | Corescript Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor Element -->
+    <div class="cursor-dot"></div>
+
+    <!-- Abstract Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="calculator">
+        <div class="theme-switch-wrapper">
+            <button class="theme-switch" id="theme-toggle" aria-label="Switch Theme">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+
+        <div class="display">
+            <div class="previous-operand" data-previous-operand></div>
+            <div class="current-operand" data-current-operand>0</div>
+        </div>
+
+        <div class="keys-grid">
+            <button class="btn-function" data-action="clear">AC</button>
+            <button class="btn-function" data-action="delete"><i class="fas fa-backspace"></i></button>
+            <button class="btn-function" data-operation="%">%</button>
+            <button class="btn-operator" data-operation="÷">÷</button>
+
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button class="btn-operator" data-operation="*">×</button>
+
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button class="btn-operator" data-operation="-">−</button>
+
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button class="btn-operator" data-operation="+">+</button>
+
+            <button class="span-2" data-number>0</button>
+            <button data-number>.</button>
+            <button class="btn-accent" data-action="equals">=</button>
+        </div>
+    </div>
+
+    <script src="/script.js"> </script>
+</body>
+
+</html>
